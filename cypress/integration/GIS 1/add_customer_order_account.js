@@ -13,9 +13,7 @@ it('GIS Login, Add Customer and Create Order', ()=>{
    cy.get('.dropdown-open > .dropdown-menu > :nth-child(1) > a').click();
    cy.get('[href="/portal/account/customers/add"] > .btn').click();
    cy.get('#master_email').type(`${Date.now()}@newtest.com`);
-   //cy.get('#master_email').type('robotntwine1@outlook.com')
    cy.get('#name').type(`${Date.now()}Company`);
-   //cy.get('#name').type('MC Auto A1')
    cy.get('#former_name').type('MC Alias 1');
    cy.get('#pccwglobal_insight_company_code').type(random_code);
    cy.get('#pccwglobal_signed_bdm_name').type('Mario N1');
