@@ -25,3 +25,19 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 Cypress.Commands.add
+
+// Login Helper command
+Cypress.Commands.add('Login_GIS', () =>{
+    const path = 'http://gis-staging.interstellar.prv:3000/account/login';
+    cy.visit(path);
+    cy.get('#email').type('mnavacerrada@pccwglobal.com');
+    cy.get ('#password').type('MarioGIS81!');
+    cy.get('#login').click();
+        
+})
+// Logout Helper command
+
+Cypress.Commands.add('Logout_GIS', () => {
+    cy.get('.nav-right > :nth-child(4) > .btn-dropdown-toggle').click();
+    cy.get('.dropdown-open > .dropdown-menu > :nth-child(3) > a').click();
+    })

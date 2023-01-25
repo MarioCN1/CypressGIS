@@ -1,6 +1,8 @@
 {
   "watchForFileChanges": true,
   "projectId": "dsrfo3",
-  "experimentalStudio": true
-
+  "experimentalStudio": true,
+  "viewportWidth": 1200,
+  "viewportHeight": 900,
+  "chromeWebSecurity": false
 }
